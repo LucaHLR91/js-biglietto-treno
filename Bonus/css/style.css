@@ -3,3 +3,39 @@
      padding: 0;
      box-sizing: border-box;
  }
+
+ body {
+    font-family: 'Josefin Sans', sans-serif;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 80%;
+     height: 100vh;
+     margin: 50px auto;
+     background-color: rgba(50, 170, 220, 0.5);
+     border-radius: 30px;
+
+ }
+
+ #biglietto {
+    width: 40vh
+ }
+
+ #biglietto img {
+     width: 100%;
+ }
+
+ #text {
+     font-size: 50px;
+     padding: 30px 0;
+     text-align: center;
+ }
+
+ .font-awesome {
+     font-size: 50px;
+     color: green;
+     text-align: center;
+ }

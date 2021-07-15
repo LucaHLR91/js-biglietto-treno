@@ -29,10 +29,20 @@ var prezzo_viaggio = prezzo_km * chilometri;
 // var sconto_over65 = (prezzo_viaggio * 40) / 100;
 // var prezzo_over65 = prezzo_viaggio - sconto_over65;
 
+
 if (eta < 18) {
-    console.log('il prezzo del tuo biglietto è ' + (prezzo_viaggio - ((prezzo_viaggio * 20) / 100)).toFixed(2) + '€')
+    console.log('Il prezzo del tuo biglietto è ' + (prezzo_viaggio - ((prezzo_viaggio * 20) / 100)).toFixed(2) + '€');
 }else if (eta > 65) {
-    console.log('il prezzo del tuo biglietto è ' + (prezzo_viaggio - ((prezzo_viaggio * 40) / 100)).toFixed(2) + '€')
+    console.log('Il prezzo del tuo biglietto è ' + (prezzo_viaggio - ((prezzo_viaggio * 40) / 100)).toFixed(2) + '€');
 }else {
-    console.log('il prezzo del tuo biglietto è ' + prezzo_viaggio.toFixed(2) + '€')
+    console.log('Il prezzo del tuo biglietto è ' + prezzo_viaggio.toFixed(2) + '€');
+}
+
+
+if (eta < 18) {
+   document.getElementById('text').innerHTML = ('Il prezzo del tuo biglietto è ' + (prezzo_viaggio - ((prezzo_viaggio * 20) / 100)).toFixed(2) + '€');
+}else if (eta > 65) {
+   document.getElementById('text').innerHTML = ('Il prezzo del tuo biglietto è ' + (prezzo_viaggio - ((prezzo_viaggio * 40) / 100)).toFixed(2) + '€');
+}else {
+   document.getElementById('text').innerHTML = ('Il prezzo del tuo biglietto è ' + prezzo_viaggio.toFixed(2) + '€');
 }
