@@ -30,10 +30,9 @@ var sconto_over65 = (prezzo_viaggio * 40) / 100;
 var prezzo_over65 = prezzo_viaggio - sconto_over65;
 
 if (eta < 18) {
-    console.log('il prezzo del tuo biglietto è ' + prezzo_u18 + '€')
+    console.log('il prezzo del tuo biglietto è ' + prezzo_u18.toFixed(2) + '€')
 }else if (eta > 65) {
-    console.log('il prezzo del tuo biglietto è ' + prezzo_over65 + '€')
+    console.log('il prezzo del tuo biglietto è ' + prezzo_over65.toFixed(2) + '€')
 }else {
-    console.log('il prezzo del tuo biglietto è ' + prezzo_viaggio + '€')
+    console.log('il prezzo del tuo biglietto è ' + prezzo_viaggio.toFixed(2) + '€')
 }
-
