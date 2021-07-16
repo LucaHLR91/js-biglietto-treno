@@ -14,8 +14,8 @@ BONUS: introduzione della parte grafica con CSS */
 
 
 // richieste utente
-var eta = prompt('inserisci la tua età');
-var chilometri = prompt('inserisci i km che percorri');
+var eta = parseInt(prompt('inserisci la tua età'));
+var chilometri = parseInt(prompt('inserisci i km che percorri'));
 
 // prezzo intero
 var prezzo_km = 0.21;
